@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Cost</title>
+    <!-- tailwind css added -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="mt-5">
+        <h1 class="text-5xl font-bold text-teal-500 not-italic font-mono text-center h-3/4">Monthly Cost</h1>
+    </header>
+    <main>
+        <div class="grid grid-cols-2 gap-7 mt-5">
+            <div class="">
+                <img class="w-full h-screen" src="images/money.jpg">
+            </div>
+            <div class="bg-slate-100 w-4/5 h-screen">
+                <div class="mt-9 text-center h-full">
+                    <div class="">
+                        <h3 class="text-black font-medium text-lg mb-2">Income</h3>
+                        <p class="mb-3">Income: <input id="income-input" class="bg-slate-200 rounded-sm" type="text">
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-black font-medium text-lg mb-2">Expenses</h3>
+                        <p class="mb-3">Food: <input id="food-input" class="bg-slate-200 rounded-sm" type="text"></p>
+                        <p class="mb-3 pl-2">Rent: <input id="rent-input" class="bg-slate-200 rounded-sm" type="text">
+                        </p>
+                        <p class="mb-4 pr-3">Clothes: <input id="clothes-input" class="bg-slate-200 rounded-sm"
+                                type="text">
+                        </p>
+                        <button id="calculate-button"
+                            class="mb-3 rounded font-medium text-base text-white bg-sky-500 w-28 h-9">Calculate</button>
+                    </div>
+                    <h3 class="text-black font-medium text-lg mb-4">Total Expenses: <span id="total-expense">00</span>
+                    </h3>
+                    <h3 class="text-black font-medium text-lg mb-4">Balance: <span id="balace">00</span></h3>
+                    <div>
+                        <div class="flex">
+                            <div>
+                                <p class="ml-28">Save: <input id="save-input" class="bg-slate-200 rounded-sm w-24 h-7"
+                                        type="text"></p>
+                            </div>
+                            <div><span class="p-2.5">&#37;</span><button id="save-button"
+                                    class="rounded font-medium text-base text-white bg-sky-500 w-28 h-7">Save</button>
+                            </div>
+                        </div>
+                        <h3 class="text-black font-medium text-lg mb-4 mt-3">Saving Amount: <span
+                                id="saving-amount">2000</span></h3>
+                        <h3 class="text-black font-medium text-lg mb-4">Remaining Balance: <span
+                                id="remaining-balance">2500</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/cost.js"></script>
+
+</body>
+
+</html>
