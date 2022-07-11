@@ -5,8 +5,7 @@ function getInputValue(inputId) {
     // clear input value
     inputField.value = '';
     return amount;
-}
-
+};
 
 document.getElementById('calculate-button').addEventListener('click', function () {
     // get food value
@@ -33,4 +32,20 @@ document.getElementById('calculate-button').addEventListener('click', function (
     const totalBalace = parseFloat(totalAmountText);
 
     totalAmount.innerText = incomeAmount - totalExpenses.innerText;
+});
+
+document.getElementById('save-button').addEventListener('click', function () {
+    const saveInput = document.getElementById('save-input');
+    const saveInputText = saveInput.value;
+    const saveAmount = parseFloat(saveInputText);
+    console.log(saveAmount);
+
+    // saving amount
+    const saving = document.getElementById('saving-amount');
+    const savingText = saving.innerText;
+    const savingAmount = parseFloat(savingText);
+    console.log(savingAmount);
+
+    // clear saving field
+    saveInput.value = '';
 })
